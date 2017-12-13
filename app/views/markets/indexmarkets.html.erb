@@ -1,0 +1,10 @@
+<% provide(:title, "IndexOfMarkets") %>
+<h2>MARKETS IN YOUR RANGE</h2>
+
+<% @markets.each do |market| %>
+
+  <% @string = market.group + " " + market.address %>
+  <%= link_to @string , market_path(market) %></br>
+
+<% end %>
+

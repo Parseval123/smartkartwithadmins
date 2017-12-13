@@ -1,0 +1,20 @@
+<% provide(:title, "AddMarket") %>
+
+<%= current_manager.name %>
+
+<%= form_for @market do |f| %>
+
+    <%= render 'shared/error_messages3' %>
+
+    <%= f.label :marketname %>
+    <%= f.text_field :group %>
+
+    <%= f.label :address %>
+    <%= f.text_field :address %>
+
+    <%= f.label :info %>
+    <%= f.text_field :info %>
+ 
+    <%= f.submit "add market", class: "btn btn-primary" %>
+
+<%end%>

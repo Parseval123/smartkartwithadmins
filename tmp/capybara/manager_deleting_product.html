@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	           <title>WelcomeManager | SMART KART</title>
+
+				<link rel="stylesheet" media="all" href="/assets/application-3e385f5dafeb6ab60c8bb6d4ae9f6cea174a3b8751d0c61f7f2b5fbb90fbbeaa.css" data-turbolinks-track="true" />
+				<script src="/assets/application-49ee406259be8de24ba4b2c863ddcced36c31ba577ea654e1d4992a57260a5f4.js" data-turbolinks-track="true"></script>
+				
+				<!--[if lt IE 9]>
+				<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+				</script>
+				<![endif]-->
+
+	</head>
+	<body>
+
+                        	<div class="alert alert-success">product deleted successfully</div>
+             
+			    <nav class="navbar navbar-default navbar-inverse navbar-fixed-top">
+  
+  					<div class="col-md-3">
+  					</div>
+
+					<div class="col-md-6">
+					 <ul class="nav navbar-nav", id="quad">
+						<li><a href="/help">Help</a></li>
+						<li><a href="/howto">How to</a></li>
+						<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Settings <span 							class="caret"></span></a>
+							<ul class="dropdown-menu">
+							  <li><a href="/managers/1/edit">Change Personal Data</a></li>
+                                                          <li><a href="/managers/1">Add Product at your Market</a></li>
+							  <li><a rel="nofollow" data-method="delete" href="/logoutm">Log Out</a></a></li>
+							</ul>
+						</li>
+					     
+					 </ul>
+					</div>
+
+					<div class="col-md-3">
+					</div>
+			    </nav>
+
+
+
+
+			<div class="container">
+			<h1>SMART KART <a href="/managers/1"><img width="100" height="100" src="/assets/logo-26789614b681dcd891d324f6f2e2515eb06380d438d6ce7f729464e64ceb127e.jpg" alt="Logo 26789614b681dcd891d324f6f2e2515eb06380d438d6ce7f729464e64ceb127e" /></a></h1> 
+			<hr/>
+			 </br></br>
+
+
+		Mario </br>
+
+		add products to your supermarket: via alessandro manzoni, 31, 03031 Aquino FR </br>
+			
+			<form class="new_owner" id="new_owner" action="/owners" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" />
+
+			    <label for="owner_prodotto">Prodotto</label><br>
+			    <select name="owner[product_id]" id="owner_product_id"><option value="1">Mezze Penne Barilla 500gr</option>
+<option value="2">Olio Extra Vergine Monini 1L</option>
+<option value="3">Passata Di Pomodoro Mutti 400gr</option>
+<option value="4">Caffe Lavazza 250gr</option>
+<option value="5">Birra Peroni 0.66L</option>
+<option value="6">Dentifricio Mentadent 75ml</option>
+<option value="7">Fazzoletti Scala 12 Pezzi</option>
+<option value="8">Detergente Per Vetri Vetril 650ml</option>
+<option value="9">Tovaglioli Regina 50 Pezzi</option>
+<option value="10">Smacchiatore Omino Bianco 1L</option></select></br>
+
+			    <label for="owner_prezzo">Prezzo</label><br>
+			    <input step="0.01" type="number" name="owner[price]" id="owner_price" /></br>
+
+			    <label for="owner_stock">Stock</label><br>
+			    <input type="number" name="owner[stock]" id="owner_stock" /></br>
+			 
+			    <input value="1" type="hidden" name="owner[market_id]" id="owner_market_id" />
+			 
+			    <input type="submit" name="commit" value="add product" class="btn btn-primary" /></br>
+
+</form>
+			</br>
+			INVENTARIO:
+			</br>
+
+		<div class="col-md-3"></br>
+		
+
+			nome prodotto:Mezze Penne &nbsp Barilla &nbsp 500gr &nbsp <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="/owners/1">delete Mezze Penne Barilla</a> &nbsp&nbsp<a href="/owners/1/edit">edit</a></br>
+			prezzo:0.8 </br>
+			stock:23 </br>
+
+			<hr/>
+
+
+			nome prodotto:Passata Di Pomodoro &nbsp Mutti &nbsp 400gr &nbsp <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="/owners/3">delete Passata Di Pomodoro Mutti</a> &nbsp&nbsp<a href="/owners/3/edit">edit</a></br>
+			prezzo:0.99 </br>
+			stock:21 </br>
+
+			<hr/>
+
+
+			nome prodotto:Caffe &nbsp Lavazza &nbsp 250gr &nbsp <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="/owners/4">delete Caffe Lavazza</a> &nbsp&nbsp<a href="/owners/4/edit">edit</a></br>
+			prezzo:2.99 </br>
+			stock:54 </br>
+
+			<hr/>
+
+
+			nome prodotto:Birra &nbsp Peroni &nbsp 0.66L &nbsp <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="/owners/5">delete Birra Peroni</a> &nbsp&nbsp<a href="/owners/5/edit">edit</a></br>
+			prezzo:1.1 </br>
+			stock:60 </br>
+
+			<hr/>
+
+
+			nome prodotto:Dentifricio &nbsp Mentadent &nbsp 75ml &nbsp <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="/owners/6">delete Dentifricio Mentadent</a> &nbsp&nbsp<a href="/owners/6/edit">edit</a></br>
+			prezzo:1.3 </br>
+			stock:14 </br>
+
+			<hr/>
+
+
+			nome prodotto:Fazzoletti &nbsp Scala &nbsp 12 Pezzi &nbsp <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="/owners/7">delete Fazzoletti Scala</a> &nbsp&nbsp<a href="/owners/7/edit">edit</a></br>
+			prezzo:1.0 </br>
+			stock:43 </br>
+
+			<hr/>
+
+
+			nome prodotto:Detergente Per Vetri &nbsp Vetril &nbsp 650ml &nbsp <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="/owners/8">delete Detergente Per Vetri Vetril</a> &nbsp&nbsp<a href="/owners/8/edit">edit</a></br>
+			prezzo:1.7 </br>
+			stock:16 </br>
+
+			<hr/>
+
+
+			nome prodotto:Tovaglioli &nbsp Regina &nbsp 50 Pezzi &nbsp <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="/owners/9">delete Tovaglioli Regina</a> &nbsp&nbsp<a href="/owners/9/edit">edit</a></br>
+			prezzo:0.8 </br>
+			stock:23 </br>
+
+			<hr/>
+
+
+			nome prodotto:Smacchiatore &nbsp Omino Bianco &nbsp 1L &nbsp <a data-confirm="You sure?" rel="nofollow" data-method="delete" href="/owners/10">delete Smacchiatore Omino Bianco</a> &nbsp&nbsp<a href="/owners/10/edit">edit</a></br>
+			prezzo:2.8 </br>
+			stock:22 </br>
+
+			<hr/>
+
+
+		</div>
+
+		<div class="col-md-6">
+	    		no request has been made yet
+
+			
+		
+			</div>
+			
+    			<footer class="footer">
+  				<nav>
+<hr/>
+					 <ul >
+						<li><a href="/logina">Admin Log In</a></li> &nbsp &nbsp &nbsp &nbsp
+						<li><a href="#">Contacts</a></li>
+					 </ul>
+				</nav>
+		
+
+	</body>
+</html>
